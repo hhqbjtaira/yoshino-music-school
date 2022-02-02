@@ -10,6 +10,7 @@ body {
   background-color: #F7E8BC;
   color: #383e45;
   font-size: 0.9rem;
+  display: block;
 }
 a {
   /* サイト内のリンクに下線が表示されないように設定 */
@@ -66,15 +67,23 @@ div#header.top {
   position: relative;
 }
 
-ul#topnav.nav {
-  text-align: center;
+ul#topnav.clear {
+  display: flex;
+  flex-wrap: wrap;
+  /*text-align: center;
   position: absolute;
   bottom: 10px;
-  border-right: solid 1px #fff;
+  border-right: solid 1px #fff;*/
 }
 
 .box{
+  display: flex;
+  flex-wrap: wrap;
   float: left;
+  place-content:flex-end center;
+  /*justify-self: 位置
+  align-self: 縦*/
+
 }
 
 div#sidebar.left-1{
@@ -95,14 +104,19 @@ aside#sidebar.right-1{
 
 article#article-1.wrapper{
   display: block;
-  background-image:image-url("course_bk_top.gif");
-
+  background-image: url(course_bk_top.gif), url(course_bk_mid.png), url(course_bk_bottom.png);
+  background-repeat: no-repeat, repeat-y, no-repeat;
   width: 619px;
-  height: 868px;
+  height: 300px;
   left: 301px;
   right: 918px;
   top: 558px;
   bottom: 1426px;
+
+  /*background-image: url(bg_artdeco.jpg), url(bg_cofee.jpg);
+  background-repeat: repeat-x, no-repeat;
+  background-position: top, bottom right 20px;*/
+
   /*image-url("course_bk_top.gif") no-repeat;
 	image-url("course_bk_mid.png") repeat-y,
   image-url("course_bk_bottom.png") no-repeat;*/
