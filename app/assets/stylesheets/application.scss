@@ -177,11 +177,11 @@ ul#topnav a {
   align-self: 縦
 }*/
 
-.box a {
+.button a {
   coler: #432;
 }
 
-.box a:hover {
+.button a:hover {
   coler: rgb(248, 247, 247);
 }
 
@@ -215,30 +215,53 @@ div#sidebar.left-1 {
   coler: #432;
 }
 
-div#sidebar.right-1 {
-  position: absolute;
-  /*display: block;*/
-  width: 184px;
+div#pages-2.widget widget_pages
+
+/*div#sidebar.right-1 {
+  position: absolute;*/
+/*display: block;*/
+/*width: 184px;
   height: 674px;
   left: 924px;
   right: 1032px;
   top: 558px;
   bottom: 1232px;
+}*/
+div#main {
+  position: relative;
+
 }
 
-/*#main .course_mid {
-  background: url(images/course_bk_mid.png) repeat-y;
-}
-
-#main .course_bottom {
-  background: url(images/course_bk_bottom.png) no-repeat bottom left;
-}
-
-#main .course_top {
-  background: url(images/course_bk_top.gif) no-repeat top left;
+/*.course_mid {
+  background-image: url(course_bk_mid.png);
+  background-repeat: repeat-y;
+  position: absolute;
+  width: auto;
+  width: 619px;
+  height: auto;
+  left: 301px;
+  right: 918px;
+  top: 558px;
+  bottom: 1426px;
 }*/
 
-article#article-1.wrapper {
+/*.course_bottom {
+  background-image: url(course_bk_bottom.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: auto;
+
+}*/
+
+/*.title_top {
+  background-image: url(course_bk_bottom.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: auto;
+
+}*/
+
+/*div#article-1.wrapper {
   display: block;
   background-image: url(course_bk_top.gif), url(course_bk_mid.png);
   background-repeat: no-repeat, repeat-y;
@@ -248,40 +271,123 @@ article#article-1.wrapper {
   right: 918px;
   top: 558px;
   bottom: 1426px;
+}*/
 
-  /*width: 619px;
+/*div#main_class.course_mid {
+  /*display: block;*/
+/*background-image: url(course_bk_mid.png);
+  background-repeat: repeat-y;
+  width: 619px;
+  height: auto;
+  left: 301px;
+  right: 918px;
+  top: 558px;
+  bottom: 1426px;
+  position: relative;
+}*/
+
+/*div#article-1.course_bottom {*/
+/*display: block;*/
+/*background-image: url(course_bk_bottom.png);
+  background-repeat: no-repeat;
+  width: 619px;
+  height: auto;
+  left: 301px;
+  right: 918px;
+  top: 558px;
+  bottom: 1426px;
+  position: relative;
+}*/
+
+/*div#article-2.tittle_top {*/
+/*display: block;*/
+/*background-image: url(course_bk_top.gif);
+  background-repeat: no-repeat;
+  width: 619px;
+  height: auto;
+  left: 301px;
+  right: 918px;
+  top: 558px;
+  bottom: 1426px;
+  position: relative;
+}*/
+
+
+
+
+/***********************************************
+メイン（中央）
+***********************************************/
+/*コース案内背景*/
+/*a#top_coruse,
+a#top_column {
+  display: block;
+  width: 359px;
+  margin: 0 auto;
+  padding-top: 8px;
+}*/
+
+/*#main .course_mid {
+  background: url(images/course_bk_mid.png) repeat-y;
+}*/
+
+/*#main .course_bottom {
+  background: url(images/course_bk_bottom.png) no-repeat bottom left;
+}*/
+
+/*#main .course_top {
+  background: url(images/course_bk_top.gif) no-repeat top left;
+}*/
+
+/*コース案内テキストの配置*/
+#main div.course_contents {
+  position: relative;
+}
+
+#main p.course_text {
+  margin-top: 230px;
+  padding-top: 30px;
+}
+
+#main p.sec_text {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+
+/*width: 619px;
   height: 850px;
   left: 301px;
   right: 918px;
   top: 558px;
   bottom: 1426px;*/
 
-  /*background-image: url(bg_artdeco.jpg), url(bg_cofee.jpg);
+/*background-image: url(bg_artdeco.jpg), url(bg_cofee.jpg);
   background-repeat: repeat-x, no-repeat;
   background-position: top, bottom right 20px;*/
 
-  /*image-url("course_bk_top.gif") no-repeat;
+/*image-url("course_bk_top.gif") no-repeat;
 	image-url("course_bk_mid.png") repeat-y,
   image-url("course_bk_bottom.png") no-repeat;*/
-  /*background-image: url("course_bk_top.gif"), url("course_bk_mid.png"), url("course_bk_bottom.png");
+/*background-image: url("course_bk_top.gif"), url("course_bk_mid.png"), url("course_bk_bottom.png");
   background-repeat: no-repeat, repeat-x, no-repeat
   background-position: right 10% bottom 10%, left 10% bottom, left top;
   background-size: 20% auto, 20% auto, 100% auto;*/
-}
 
-div#article-4.bottom {
+
+/*div#article-4.bottom {
   display: block;
   background-image: url(course_bk_bottom.png);
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: bottom;*/
 
-  width: auto;
+/*width: auto;
   height: auto;
   /*width: 619px;
-  left: 301px;*/
+  left: 301px;
   right: 918px;
-  /*top: 0;*/
-}
+  /*top: 0;
+}*/
 
 /*article#article-2.wrapper{
   background-image: image-url("course_bk_mid.png");
@@ -293,3 +399,74 @@ div#article-4.bottom {
   top: 558px;
   bottom: 1426px;
 }*/
+
+#footer .box {
+  float: left;
+  width: 165px;
+  margin: 20px 16px 10px 0;
+  line-height: 1.8;
+  color: #594500;
+}
+
+.box_img {
+  padding: 0px 0px 10px 0px;
+}
+
+/* メインとフッターのリスト位置調節 */
+#main ul,
+#footer ul {
+  margin-left: 12px;
+}
+
+#main li,
+#footer li {
+  margin-bottom: 3px;
+}
+
+
+
+
+
+/*************
+サイド（左側）コンテンツ
+*************/
+#sidebar {
+  float: left;
+  width: 185px;
+  padding: 6px 9px 15px 18px;
+  background-position: 31px 0px;
+}
+
+#sidebar p {
+  margin-bottom: 20px;
+}
+
+#sidebar h3 {
+  text-indent: -9999px;
+  height: 0;
+}
+
+#sidebar ul {
+  margin-left: 5px;
+  padding: 10px 0;
+}
+
+#sidebar li {
+  margin: 0 10px 24px 0px;
+  list-style: none;
+  background: url(images/li-line.png) no-repeat 14px 18px;
+}
+
+#sidebar li a {
+  font-size: 108%;
+  line-height: 1.6em;
+  background: url(images/onpu-off.png) no-repeat 0 25%;
+  display: block;
+  padding-left: 18px;
+  color: #816400;
+}
+
+div#footer_wrap {
+  background: #816400;
+  display: flex;
+}
