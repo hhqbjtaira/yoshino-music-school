@@ -20,23 +20,24 @@
 
   <body>
     <!-- ヘッダー -->
-    <header id="header" class="wrapper">
-      <div id="header" class="top">
+    <header id="page-header" class="wrapper">
+      <div id="header" class="top" style="text-align: center">
         <h1 class="site-title">
-          <a href="https://nijiiro-ms.com/"></a>
+          <%= image_tag "logo_main.png", :size => '306x215'%>
         </h1>
 
         <nav>
           <ul id="topnav" class="clear">
-            <li class="box"><a href="#about2">トップ</a></li>
-            <li class="box"><a href="#about2">コースご案内</a></li>
-            <li class="box"><a href="#about2">講師紹介</a></li>
-            <li class="box"><a href="#about2">体験レッスン</a></li>
-            <li class="box"><a href="#about2">入会特典</a></li>
-            <li class="box"><a href="#about2">料金一覧</a></li>
-            <li class="box"><a href="#about2">アクセス</a></li>
-            <li class="box"><a href="#about2">お問合せ</a></li>
+            <li class="box"><a href="about2">トップ</a></li>
+            <li class="box"><a href="about2">コースご案内</a></li>
+            <li class="box"><a href="about2">講師紹介</a></li>
+            <li class="box"><a href="about2">体験レッスン</a></li>
+            <li class="box"><a href="about2">入会特典</a></li>
+            <li class="box"><a href="about2">料金一覧</a></li>
+            <li class="box"><a href="about2">アクセス</a></li>
+            <li class="box"><a href="about2">お問合せ</a></li>
           </ul>
+
         </nav>
       </div>
     </header>
@@ -53,14 +54,14 @@
             <li><a href="#about">バイオリンコース</a></li>
             <li><a href="#about">ピアノ教室の思い</a></li>
             <li><a href="#about">講師紹介</a></li>
-            <li><a href="#about"></a>よくあるお問い合わせ</li>
-            <li><a href="#about"></a>入会特典</li>
-            <li><a href="#about"></a>レッスン料金一覧</li>
-            <li><a href="#about"></a>教室の様子</li>
-            <li><a href="#about"></a>アクセス</li>
-            <li><a href="#about"></a>プライバシーポリシー</li>
-            <li><a href="#about"></a>サービスエリア</li>
-            <li><a href="#about"></a>リンク</li>
+            <li><a href="#about">よくあるお問い合わせ</a></li>
+            <li><a href="#about">入会特典</a></li>
+            <li><a href="#about">レッスン料金一覧</a></li>
+            <li><a href="#about">教室の様子</a></li>
+            <li><a href="#about">アクセス</a></li>
+            <li><a href="#about">プライバシーポリシー</a></li>
+            <li><a href="#about">サービスエリア</a></li>
+            <li><a href="#about">リンク</a></li>
           </ul>
       </div>
 
@@ -82,21 +83,32 @@
       <!-- / 右サイド -->
 
       <div id="content" class="top">
+
         <!-- アーティクル -->
         <div id="main">
           <article id="article-1" class="wrapper">
+            <div id="article-2" class="tittle_top">
             <h2>
               <%= image_tag 'tittle_top_course.png'%>
-              <!--<a id="top_coruse" href="course"><img alt="tittle_top_course" src="tittle_top_course.png" width="359" height="41">-->
-              </a>
+              <!--<a id="top_coruse" href="course"><img alt="tittle_top_course" src="tittle_top_course.png" width="359" height="41"></a> -->
             </h2>
+            </div>
 
-            <div id="top_mv" class="youtube">
-            <iframe src="https://www.youtube.com/embed/sXQVEr1SD4g?controls=0" width="587" height="348"></iframe>
-            <p>沖縄 ピアノ教室<br />にじいろミュージックスクールでは、生徒さんの年齢・ご希望に合せて3つのピアノレッスンコースをご用意しております。</p>
-            <p><strong>大人の体験レッスン</strong>や<strong>保育士試験、教員採用試験</strong>のアドバイスも行なっております。</p>
-            <p>0歳から3歳半までのお子さまには、リトミック教室をご案内しております。リトミック教室では、乳幼児・幼児期から音楽を通して「心を豊かにする情操教育、音感教育、リズム感教育」を体験頂くことができます。<br />将来、<strong>ピアノ教室</strong>をお考えの方はぜひご検討ください。</p>
+            <div id="article-3" class="youtube">
+              <iframe src="https://www.youtube.com/embed/sXQVEr1SD4g?controls=0" width="587" height="348"></iframe>
+              <p>沖縄 ピアノ教室<br />にじいろミュージックスクールでは、生徒さんの年齢・ご希望に合せて3つのピアノレッスンコースをご用意しております。</p>
+              <p><strong>大人の体験レッスン</strong>や<strong>保育士試験、教員採用試験</strong>のアドバイスも行なっております。</p>
+              <p>0歳から3歳半までのお子さまには、リトミック教室をご案内しております。リトミック教室では、乳幼児・幼児期から音楽を通して「心を豊かにする情操教育、音感教育、リズム感教育」を体験頂くことができます。<br />将来、<strong>ピアノ教室</strong>をお考えの方はぜひご検討ください。</p>
+              
+              <div id="article-4" class="bottom">
+              <a class="course_biginer" href="course#anc_bgn"><img alt="ビギナーコース"src="https://nijiiro-ms.com/wp/wp-content/themes/piano/images/biginer.png" width="191" height="496"></a>
+              <a class="course_advance" href="course#anc_adv"><img alt="アドバンスコース"src="https://nijiiro-ms.com/wp/wp-content/themes/piano/images/advance.png" width="198" height="488"></a>
+              <a class="course_adult" href="course#anc_adt"><img alt="大人のピアノ教室"src="https://nijiiro-ms.com/wp/wp-content/themes/piano/images/adult.png" width="197" height="468"></a>
+              </div>
+            </div>
+
           </article>
+
 
           <!-- セクション -->
           <section id="about2" class="wrapper">
