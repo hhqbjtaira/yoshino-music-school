@@ -12,6 +12,7 @@ body {
   font-family: 14px/1.4 "メイリオ", "Meiryo", arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "MS Pゴシック", "MS PGothic", Sans-Serif;
   color: #616161;
   background: #F7E8BC;
+  position: relative;
   /*font-size: 0.9rem;*/
 }
 
@@ -37,11 +38,11 @@ line-height にh1タグの高さよりも小さい値「1px」を指定するこ
 h1タグの上下の余白が消えるため、ロゴ画像の高さと揃う
 「line-height: 0;」を指定してもOKです
 */
-.site-title {
+/*.site-title {
   width: 120px;
   line-height: 1px;
   padding: 10px 0;
-}
+}*/
 
 /* aタグのリンク範囲を親要素のサイズに広げます */
 .a {
@@ -65,7 +66,7 @@ h1タグの上下の余白が消えるため、ロゴ画像の高さと揃う
 
 /* 画面の最大幅を指定。共通で使用します, 0 4%はスマホ用*/
 .wrapper {
-  max-width: 1424px;
+  /*max-width: 1000px;*/
   margin: 0 auto 100px auto;
   padding: 0 4%;
   text-align: center;
@@ -73,11 +74,12 @@ h1タグの上下の余白が消えるため、ロゴ画像の高さと揃う
 
 div#header.top {
   position: relative;
-  width: 1040px;
-  height: 541px;
+  width: 72%;
+  /*width: 1140px;*/
+  height: 540px;
   background-image: image-url("piano_eyecatch.jpg");
   margin: auto;
-  position: relative;
+  top: 0px;
 }
 
 .logo_main {
@@ -126,8 +128,8 @@ ul#topnav {
   /*border-bottom: solid 3px #bbaccd;*/
   text-shadow: 0px 0px 5px #fff, 0px 0px 5px #fff, 0px 0px 5px #fff;
   position: absolute;
-  top: 365px;
-  left: 5px;
+  top: 430px;
+  left: 1px;
 }
 
 ul#topnav li {
@@ -266,7 +268,7 @@ div#main_class.course_mid {
   background-image: url(course_bk_top.gif), url(course_bk_mid.png);
   background-repeat: no-repeat, repeat-y;
   width: 619px;
-  height: auto;
+  height: 600px;
   left: 301px;
   right: 918px;
   top: 558px;
@@ -431,6 +433,7 @@ a#top_column {
 サイド（左側）コンテンツ
 *************/
 #sidebar {
+  order: 1;
   float: left;
   width: 185px;
   padding: 6px 9px 15px 18px;
@@ -466,7 +469,47 @@ a#top_column {
   color: #816400;
 }
 
-div#footer_wrap {
-  background: #816400;
+/***********************************************
+メイン（中央）
+***********************************************/
+
+#container {
   display: flex;
+  order: 2;
+}
+
+
+
+
+
+/*************
+サイド（右側）コンテンツ
+*************/
+#side_r {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  order: 3;
+  /*width: 185px;
+  padding: 6px 9px 15px 18px;
+  background-position: 31px 0px;*/
+}
+
+
+
+/* フッター */
+#footer_wrap {
+  position: relative;
+}
+
+#footer .inner {
+  display: flex;
+  background: #D8C78C;
+
+}
+
+div#footer_down.down-bar {
+  color: #3B2D00;
+  position: absolute;
+  /*padding-bottom: 0px;*/
 }
