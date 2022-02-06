@@ -528,6 +528,13 @@ div#main {
 .inner {
   display: flex;
   background: #D8C78C;
+  text-align: left;
+}
+
+#f-b {
+  background: #3B2D00;
+  color: #FFFFFF;
+  text-align: center;
 }
 
 /*div#footer_down {
@@ -559,5 +566,21 @@ div#main {
   display: grid;
   gap: 10px;
   grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 1%;
+}
+
+/* news,review２つを横に並べる */
+.news_re {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1%;
+}
+
+/* バナー画像２つを横に並べる */
+.banner {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
   margin-top: 1%;
 }
