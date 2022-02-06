@@ -504,15 +504,13 @@ div#main {
 /*************
 サイド（右側）コンテンツ
 *************/
-.wrap_side {
+/*.wrap_side {
   float: right;
-}
+}*/
 
 #side_r {
-  float: right;
   display: flex;
   flex-direction: column;
-  order: 3;
   /*width: 185px;
   padding: 6px 9px 15px 18px;
   background-position: 31px 0px;*/
@@ -550,15 +548,18 @@ div#main {
 }
 
 #content {
-  float: right;
+  float: left;
+  order: 2;
 }
 
 #wrap_side {
-  float: right;
+  float: left;
+  order: 3;
 }
 
 #sidebar {
   float: left;
+  order: 1;
 }
 
 /* コースの画像を横に並べる */
