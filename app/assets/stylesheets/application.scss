@@ -467,22 +467,23 @@ a#top_column {
 /***********************************************
 メイン（中央）
 ***********************************************/
-#sns_icon {
+/*#sns_icon {
   float: right;
-}
+}*/
 
 
 /*#container {
   
 }*/
 
-div#main {
+#main {
   position: relative;
   order: 2;
   display: flex;
   flex-direction: row;
   display: inline-block;
   /*overflow: hidden;*/
+  max-width: 622px;
 
 }
 
@@ -504,9 +505,9 @@ div#main {
 /*************
 サイド（右側）コンテンツ
 *************/
-/*.wrap_side {
-  float: right;
-}*/
+#wrap_side {
+  max-width: 191px;
+}
 
 #side_r {
   display: flex;
