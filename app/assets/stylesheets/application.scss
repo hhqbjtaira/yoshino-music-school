@@ -134,7 +134,7 @@ ul#topnav {
 }
 
 ul#topnav li {
-  float: left;
+  /*float: left;*/
   list-style: none;
   width: 120px;
   height: 20px;
@@ -476,6 +476,7 @@ a#top_column {
   
 }*/
 
+
 #main {
   position: relative;
   display: flex;
@@ -491,24 +492,29 @@ a#top_column {
   grid-template-columns: 1fr 1fr;
 }*/
 
-div#main_class.course_mid {
+#main_class.course_mid {
   display: block;
   background-image: url(course_bk_top.gif), url(course_bk_mid.png);
   background-repeat: no-repeat, repeat-y;
-  width: 619px;
+  /*width: 619px;
   height: 600px;
   left: 301px;
   right: 918px;
   top: 558px;
-  bottom: 1426px;
+  bottom: 1426px;*/
+}
+
+#column {
+  color: #FE8738;
 }
 
 /*************
 サイド（右側）コンテンツ
 *************/
-#wrap_side {
+/*#wrap_side {
+  max-width: 25%;
   max-width: 191px;
-}
+}*/
 
 #side_r {
   display: flex;
@@ -549,25 +555,30 @@ div#main_class.course_mid {
 
 
 /* メインを３つにする */
-#container:after {
-  content: "";
-  display: block;
+#container {
   clear: both;
+  display: flex;
+  flex-direction: row;
 }
 
-#main {
-  float: left;
+#content {
   order: 2;
 }
 
+#main {
+  order: 2;
+  width: 60%;
+  // display: flex;
+}
+
 #wrap_side {
-  float: left;
   order: 3;
+  width: 15%;
 }
 
 #sidebar {
-  float: left;
   order: 1;
+  width: 25%;
 }
 
 /* コースの画像を横に並べる */
