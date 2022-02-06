@@ -543,7 +543,7 @@ div#main {
 }
 
 #content {
-  float: left;
+  float: right;
 }
 
 #wrap_side {
@@ -552,4 +552,12 @@ div#main {
 
 #sidebar {
   float: left;
+}
+
+/* コースの画像を横に並べる */
+.course {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 1%;
 }
