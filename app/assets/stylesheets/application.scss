@@ -252,7 +252,7 @@ ul#topnav a {
 
 }*/
 
-div#main_class.course_mid {
+/*div#main_class.course_mid {
   display: block;
   background-image: url(course_bk_top.gif), url(course_bk_mid.png);
   background-repeat: no-repeat, repeat-y;
@@ -262,7 +262,7 @@ div#main_class.course_mid {
   right: 918px;
   top: 558px;
   bottom: 1426px;
-}
+}*/
 
 /*div#main_class.course_mid {
   /*display: block;*/
@@ -478,13 +478,12 @@ a#top_column {
 
 #main {
   position: relative;
-  order: 2;
   display: flex;
   flex-direction: row;
   display: inline-block;
   /*overflow: hidden;*/
-  max-width: 622px;
-
+  max-width: 630px;
+  clear: both;
 }
 
 /*#column {
@@ -492,15 +491,17 @@ a#top_column {
   grid-template-columns: 1fr 1fr;
 }*/
 
-.text_2 {
-  /*white-space: normal;*/
-  word-wrap: break-word;
+div#main_class.course_mid {
+  display: block;
+  background-image: url(course_bk_top.gif), url(course_bk_mid.png);
+  background-repeat: no-repeat, repeat-y;
+  width: 619px;
+  height: 600px;
+  left: 301px;
+  right: 918px;
+  top: 558px;
+  bottom: 1426px;
 }
-
-
-
-
-
 
 /*************
 サイド（右側）コンテンツ
@@ -517,7 +518,13 @@ a#top_column {
   background-position: 31px 0px;*/
 }
 
-
+/* sns画像を横に並べる */
+#sns_bl {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 1%;
+}
 
 /* フッター */
 #footer_wrap {
@@ -548,7 +555,7 @@ a#top_column {
   clear: both;
 }
 
-#content {
+#main {
   float: left;
   order: 2;
 }
