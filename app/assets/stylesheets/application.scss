@@ -3,16 +3,12 @@
 html {
   /* フォントサイズを100%で指定しておくことで、ユーザーがブラウザで設定したフォントサイズが正しく反映されます */
   font-size: 100%;
-  /*width: 1189px;
-  height: 2505px;*/
 }
 
 body {
-  /*background-color: #F7E8BC;*/
   font-family: 14px/1.4 "メイリオ", "Meiryo", arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "MS Pゴシック", "MS PGothic", Sans-Serif;
   color: #616161;
   background: #F7E8BC;
-  /*font-size: 0.9rem;*/
 }
 
 a {
@@ -38,7 +34,7 @@ h1タグの上下の余白が消えるため、ロゴ画像の高さと揃う
 「line-height: 0;」を指定してもOKです
 */
 .site-title {
-  width: 120px;
+  width: 100px;
   line-height: 1px;
   padding: 10px 0;
 }
@@ -54,7 +50,6 @@ h1タグの上下の余白が消えるため、ロゴ画像の高さと揃う
   font-size: 2rem;
   text-align: center;
   margin-bottom: 60px;
-  border-bottom: solid 1px #383e45;
 }
 
 /* h3タグ用 */
@@ -65,14 +60,16 @@ h1タグの上下の余白が消えるため、ロゴ画像の高さと揃う
 
 /* 画面の最大幅を指定。共通で使用します, 0 4%はスマホ用*/
 .wrapper {
-  max-width: 1424px;
-  margin: 0 auto 100px auto;
+  max-width: 100%;
+  margin: auto;
   padding: 0 4%;
   text-align: center;
 }
 
+/*************
+ header
+ *************/
 div#header.top {
-  position: relative;
   width: 1040px;
   height: 541px;
   background-image: image-url("piano_eyecatch.jpg");
@@ -80,34 +77,40 @@ div#header.top {
   position: relative;
 }
 
+/*div#header.top {
+  position: relative;
+  width: 71%;
+  height: 540px;
+  background-image: image-url("piano_eyecatch.jpg");
+  margin: auto;
+  top: 0px;
+}*/
+
 .logo_main {
   position: absolute;
   width: auto;
   /* 横幅のサイズを指定    */
   /*height: 450pX;*/
   /* 縦幅のサイズを指定    */
-
   top: 30px;
   left: 350px;
 }
 
-/*#header.logo_main {
+.tel {
   position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 100%;
-  height: 300px;
-}*/
+  top: 8px;
+  left: 750px;
+}
+
+.free_lesson_off {
+  position: absolute;
+  top: 70px;
+  left: 820px;
+}
 
 ul#topnav.clear {
   position: relative;
 }
-
-/*.box {
-  position: absolute;
-  top: 500px;
-  left: 350px;
-}*/
 
 ul#topnav {
   margin: 32px auto auto;
@@ -126,12 +129,13 @@ ul#topnav {
   /*border-bottom: solid 3px #bbaccd;*/
   text-shadow: 0px 0px 5px #fff, 0px 0px 5px #fff, 0px 0px 5px #fff;
   position: absolute;
-  top: 365px;
-  left: 5px;
+  top: 380px;
+  left: 1px;
+  display: flex;
 }
 
 ul#topnav li {
-  float: left;
+  /*float: left;*/
   list-style: none;
   width: 120px;
   height: 20px;
@@ -156,11 +160,12 @@ ul#topnav a {
 }
 
 /*親要素*/
-/*#page-header {
-  position: relative;*/
+/*#page-header {*/
+/*position: relative;*/
 /*要素内の余白は消す*/
-/*padding: 0;
+/*padding: 0;/*
 }*/
+
 
 /*#page-header.site-title {
   position: absolute;
@@ -176,14 +181,6 @@ ul#topnav a {
 /*justify-self: 位置
   align-self: 縦
 }*/
-
-.button a {
-  coler: #432;
-}
-
-.button a:hover {
-  coler: rgb(248, 247, 247);
-}
 
 /*div#header.top {
   width: 1040px;
@@ -209,13 +206,11 @@ ul#topnav a {
 
 
 
-div#sidebar.left-1 {
+/*div#sidebar.left-1 {
   position: absolute;
   display: flex;
   coler: #432;
-}
-
-div#pages-2.widget widget_pages
+}*/
 
 /*div#sidebar.right-1 {
   position: absolute;*/
@@ -227,10 +222,7 @@ div#pages-2.widget widget_pages
   top: 558px;
   bottom: 1232px;
 }*/
-div#main {
-  position: relative;
 
-}
 
 /*.course_mid {
   background-image: url(course_bk_mid.png);
@@ -261,17 +253,17 @@ div#main {
 
 }*/
 
-div#main_class.course_mid {
+/*div#main_class.course_mid {
   display: block;
   background-image: url(course_bk_top.gif), url(course_bk_mid.png);
   background-repeat: no-repeat, repeat-y;
   width: 619px;
-  height: auto;
+  height: 600px;
   left: 301px;
   right: 918px;
   top: 558px;
   bottom: 1426px;
-}
+}*/
 
 /*div#main_class.course_mid {
   /*display: block;*/
@@ -340,19 +332,19 @@ a#top_column {
 }*/
 
 /*コース案内テキストの配置*/
-#main div.course_contents {
+/*#main div.course_contents {
   position: relative;
-}
+}*/
 
-#main p.course_text {
+/*#main p.course_text {
   margin-top: 230px;
   padding-top: 30px;
-}
+}*/
 
-#main p.sec_text {
+/*#main p.sec_text {
   padding-top: 10px;
   padding-bottom: 20px;
-}
+}*/
 
 
 /*width: 619px;
@@ -400,28 +392,28 @@ a#top_column {
   bottom: 1426px;
 }*/
 
-#footer .box {
+/*#footer .box {
   float: left;
   width: 165px;
   margin: 20px 16px 10px 0;
   line-height: 1.8;
   color: #594500;
-}
+}*/
 
-.box_img {
+/*.box_img {
   padding: 0px 0px 10px 0px;
-}
+}*/
 
 /* メインとフッターのリスト位置調節 */
-#main ul,
+/*#main ul,
 #footer ul {
   margin-left: 12px;
-}
+}*/
 
-#main li,
+/*#main li,
 #footer li {
   margin-bottom: 3px;
-}
+}*/
 
 
 
@@ -431,15 +423,16 @@ a#top_column {
 サイド（左側）コンテンツ
 *************/
 #sidebar {
-  float: left;
+  order: 1;
+  /*float: left;*/
   width: 185px;
   padding: 6px 9px 15px 18px;
   background-position: 31px 0px;
 }
 
-#sidebar p {
+/*#sidebar p {
   margin-bottom: 20px;
-}
+}*/
 
 #sidebar h3 {
   text-indent: -9999px;
@@ -454,19 +447,165 @@ a#top_column {
 #sidebar li {
   margin: 0 10px 24px 0px;
   list-style: none;
-  background: url(images/li-line.png) no-repeat 14px 18px;
+  /*background: url(images/li-line.png) no-repeat 14px 18px;*/
+  background-image: url(li-line.png);
+  background-repeat: no-repeat;
+  background-position: 14px 18px;
+  padding: 0px;
 }
 
 #sidebar li a {
   font-size: 108%;
   line-height: 1.6em;
-  background: url(images/onpu-off.png) no-repeat 0 25%;
+  /*background: url(images/onpu-off.png) no-repeat 0 25%;*/
+  background-image: url(onpu-off.png);
+  background-repeat: no-repeat;
   display: block;
   padding-left: 18px;
   color: #816400;
 }
 
-div#footer_wrap {
-  background: #816400;
+/***********************************************
+メイン（中央）
+***********************************************/
+/*#sns_icon {
+  float: right;
+}*/
+
+
+/*#container {
+  
+}*/
+
+
+#main {
+  position: relative;
   display: flex;
+  flex-direction: row;
+  display: inline-block;
+  /*overflow: hidden;*/
+  max-width: 630px;
+  clear: both;
+}
+
+/*#column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}*/
+
+#main_class.course_mid {
+  display: block;
+  background-image: url(course_bk_top.gif), url(course_bk_mid.png);
+  background-repeat: no-repeat, repeat-y;
+  /*width: 619px;
+  height: 600px;
+  left: 301px;
+  right: 918px;
+  top: 558px;
+  bottom: 1426px;*/
+}
+
+#column {
+  color: #FE8738;
+}
+
+/*************
+サイド（右側）コンテンツ
+*************/
+/*#wrap_side {
+  max-width: 25%;
+  max-width: 191px;
+}*/
+
+#side_r {
+  display: flex;
+  flex-direction: column;
+  /*width: 185px;
+  padding: 6px 9px 15px 18px;
+  background-position: 31px 0px;*/
+}
+
+/* sns画像を横に並べる */
+#sns_bl {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 1%;
+}
+
+/* フッター */
+#footer_wrap {
+  position: relative;
+}
+
+.inner {
+  display: flex;
+  background: #D8C78C;
+  text-align: left;
+}
+
+#f-b {
+  background: #3B2D00;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+/*div#footer_down {
+  color: #3B2D00;
+}*/
+
+
+/* メインを３つにする */
+#container {
+  clear: both;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-left: 200px;
+}
+
+#content {
+  order: 2;
+}
+
+#main {
+  width: 60%;
+  width: 1180px;
+  // display: flex;
+}
+
+#wrap_side {
+  order: 3;
+  width: 20%;
+  width: 200px;
+}
+
+#sidebar {
+  order: 1;
+  width: 20%;
+  width: 200px;
+}
+
+/* コースの画像を横に並べる */
+.course {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 1%;
+}
+
+/* news,review２つを横に並べる */
+.news_re {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1%;
+}
+
+/* バナー画像２つを横に並べる */
+.banner {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1%;
 }
