@@ -73,6 +73,8 @@ div#header.top {
   width: 1040px;
   height: 541px;
   background-image: image-url("piano_eyecatch.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
   margin: auto;
   position: relative;
 }
@@ -506,7 +508,8 @@ a#top_column {
 }
 
 #column {
-  color: #FE8738;
+  /*color: #FE8738;*/
+  color: #616161;
 }
 
 /*************
@@ -542,6 +545,10 @@ a#top_column {
   display: flex;
   background: #D8C78C;
   text-align: left;
+}
+
+#f-1 a {
+  color: #594600;
 }
 
 #f-b {
