@@ -465,9 +465,42 @@ a#top_column {
 }
 
 /***********************************************
+左、右、メイン位置
+***********************************************/
+/* メインを３つにする 順番変更 */
+#container {
+  clear: both;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-left: 200px;
+}
+
+#content {
+  order: 2;
+}
+
+#main {
+  width: 60%;
+  width: 1180px;
+  // display: flex;
+}
+
+#wrap_side {
+  order: 3;
+  width: 20%;
+  width: 200px;
+}
+
+#sidebar {
+  order: 1;
+  width: 20%;
+  width: 200px;
+}
+
+/***********************************************
 メイン（中央）top
 ***********************************************/
-
 #main {
   position: relative;
   display: flex;
@@ -478,11 +511,6 @@ a#top_column {
   clear: both;
   margin-right: 10px;
 }
-
-/*#column {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}*/
 
 #main_class.course_mid {
   //display: block;
@@ -518,6 +546,14 @@ a#top_column {
 .course {
   position: absolute;
   top: 430px;
+}
+
+/* コースの画像を横に並べる */
+.course {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 1%;
 }
 
 /*#article-2 p {
@@ -606,99 +642,11 @@ a#top_column {
   //font-weight: bold;
 }
 
-/***********************************************
-サイド（右側）コンテンツ
-***********************************************/
-/*#wrap_side {
-  max-width: 25%;
-  max-width: 191px;
-}*/
-
-#side_r {
-  display: flex;
-  flex-direction: column;
-  /*width: 185px;
-  padding: 6px 9px 15px 18px;
-  background-position: 31px 0px;*/
-}
-
-/* sns画像を横に並べる */
-#sns_bl {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 1%;
-}
 
 
-/***********************************************
-    / フッター 
-***********************************************/
-
-#footer_wrap {
-  position: relative;
-}
-
-.inner {
-  display: flex;
-  justify-content: center;
-  background: #D8C78C;
-  text-align: left;
-}
-
-#f-1 a {
-  color: #594600;
-}
-
-#f-b {
-  background: #3B2D00;
-  color: #FFFFFF;
-  text-align: center;
-}
-
-/*div#footer_down {
-  color: #3B2D00;
-}*/
 
 
-/* メインを３つにする 順番変更 */
-#container {
-  clear: both;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  margin-left: 200px;
-}
 
-#content {
-  order: 2;
-}
-
-#main {
-  width: 60%;
-  width: 1180px;
-  // display: flex;
-}
-
-#wrap_side {
-  order: 3;
-  width: 20%;
-  width: 200px;
-}
-
-#sidebar {
-  order: 1;
-  width: 20%;
-  width: 200px;
-}
-
-/* コースの画像を横に並べる */
-.course {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 1%;
-}
 
 /***********************************************
 メイン（下）news review banner 
@@ -713,10 +661,15 @@ a#top_column {
 
 /* バナー画像２つを横に並べる */
 .banner {
-  display: grid;
+  display: flex;
   gap: 10px;
   grid-template-columns: 1fr 1fr;
-  margin-top: 1%;
+  margin-top: 16px;
+}
+
+#mashiki_bn {
+  margin-top: 13px;
+  margin-bottom: 55px;
 }
 
 /*************
@@ -756,6 +709,7 @@ a#top_column {
   review 全体2/2
  *************/
 #review {
+  margin-top: 10px;
   width: 316px;
   height: 246px;
   border-radius: 20px;
@@ -806,6 +760,7 @@ background-repeat: no-repeat;
   news 全体
  *************/
 #news {
+  margin-top: 10px;
   width: 316px;
   height: 246px;
   border-radius: 20px;
@@ -897,3 +852,57 @@ background-repeat: no-repeat;
 #news_button li a:hover {
   color: #816400;
 }
+
+/***********************************************
+サイド（右側）コンテンツ
+***********************************************/
+/*#wrap_side {
+  max-width: 25%;
+  max-width: 191px;
+}*/
+
+#side_r {
+  display: flex;
+  flex-direction: column;
+  /*width: 185px;
+  padding: 6px 9px 15px 18px;
+  background-position: 31px 0px;*/
+}
+
+/* sns画像を横に並べる */
+#sns_bl {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 1%;
+}
+
+
+/***********************************************
+    / フッター 
+***********************************************/
+
+#footer_wrap {
+  position: relative;
+}
+
+.inner {
+  display: flex;
+  justify-content: center;
+  background: #D8C78C;
+  text-align: left;
+}
+
+#f-1 a {
+  color: #594600;
+}
+
+#f-b {
+  background: #3B2D00;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+/*div#footer_down {
+  color: #3B2D00;
+}*/
