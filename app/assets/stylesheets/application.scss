@@ -536,6 +536,8 @@ a#top_column {
   margin-top: 1%;
 }
 
+
+
 /* フッター */
 #footer_wrap {
   position: relative;
@@ -616,4 +618,32 @@ a#top_column {
   gap: 10px;
   grid-template-columns: 1fr 1fr;
   margin-top: 1%;
+}
+
+.item_review_1 {
+  display: flex;
+  flex-direction: row;
+  width: 316px;
+  width: 50%;
+  /*gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1%;*/
+
+}
+
+.item_review_2 {
+  display: flex;
+  flex-direction: row;
+  width: 316px;
+  width: 50%;
+  /*gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1%;*/
+
+}
+
+#review {
+  background-color: #F6F1CD;
+  width: 316px;
+
 }
