@@ -1183,12 +1183,77 @@ background-repeat: no-repeat;
   //
 
   /***********************************************
+  メイン（中央）top
+  ***********************************************/
+  #main {
+    width: 450px;
+    //height: 700px;
+    //position: relative;
+    display: flex;
+    flex-direction: column;
+    //display: inline-block;
+    //max-width: 670px;
+    //clear: both;
+    //margin-right: 10px;
+    //list-style: none;
+  }
+
+  #main_class.course_mid {
+    //border-radius: 20px;
+    //border-style: dotted;
+    //border-color: #FB93A2;
+    //background-image: url(main_top.png);
+    //background-repeat: no-repeat;
+    //background-size: 100%;
+    //background-position: top;
+    //background-color: #FCF0DC;
+    height: 900px;
+    //position: relative;
+
+  }
+
+  .youtube {
+    width: 450px;
+    height: 200px;
+    //top: 70px;
+    //left: 40px;
+    //position: absolute;
+    //clear: both;
+  }
+
+  /*.course {
+    position: absolute;
+    top: 430px;
+  }*/
+
+  /* コースの画像を横に並べる */
+  /*.course {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 1%;
+  }*/
+
+  #text_main {
+    //position: absolute;
+    top: 620px;
+    //text-align: justify;
+    //padding-left: 20px;
+    //padding-right: 20px;
+    font-size: 13px;
+  }
+
+  /*.test_bottom a {
+    color: #FF6987;
+  }*/
+
+  /***********************************************
   レスポンシブ メイン（中央）column
   ***********************************************/
 
   #column {
     //width: 599px;
-    width: 450px;
+    width: 430px;
     height: 430px;
     //color: #616161;
     //border-radius: 20px;
