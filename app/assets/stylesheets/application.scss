@@ -541,7 +541,7 @@ a#top_column {
 }
 
 /***********************************************
-メイン（中央）top
+メイン（中央）column
 ***********************************************/
 
 #column {
@@ -555,7 +555,7 @@ a#top_column {
   background-size: 100%;
   background-position: top;
   background-color: #FCF0DC;
-  height: 530px;
+  height: 510px;
   position: relative;
   margin-top: 20px;
   //list-style: none;
@@ -567,7 +567,7 @@ a#top_column {
   padding-right: 20px;
 }
 
-#column li a {
+/*#column li a {
   //top: 100px;
   //color: #FE8738;
   //position: absolute;
@@ -576,7 +576,7 @@ a#top_column {
   //padding-left: 20px;
   //padding-right: 20px;
   //font-size: 95%;
-}
+}*/
 
 .article a {
   top: 200px;
@@ -598,6 +598,12 @@ a#top_column {
   padding: 5px 18px;
   display: inline-block;
   font-size: 16px;
+}
+
+.post_prop {
+  padding-left: 30px;
+  font-size: 14px;
+  //font-weight: bold;
 }
 
 /***********************************************
@@ -625,8 +631,10 @@ a#top_column {
 }
 
 
+/***********************************************
+    / フッター 
+***********************************************/
 
-/* フッター */
 #footer_wrap {
   position: relative;
 }
