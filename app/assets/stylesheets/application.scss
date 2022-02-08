@@ -643,7 +643,68 @@ a#top_column {
 }
 
 #review {
+
+  width: 320px;
+  height: 246px;
+  border-radius: 20px;
+  border-style: dotted;
+  border-color: #97D732;
+  background-image: url(review_top.png);
+  background-repeat: no-repeat;
+  //background-size: 350px;
+  background-size: 100%;
   background-color: #F6F1CD;
-  width: 316px;
+  float: inline-end;
+}
+
+/*#review a {
+background-image: url(review_tittle.gif);
+background-repeat: no-repeat;
+}*/
+
+#news {
+  background-color: #F7F0D4;
+  width: 320px;
+  height: 246px;
+  border-radius: 20px;
+  border-style: dotted;
+  border-color: #51C3E9;
+  padding-top: 0px;
+  padding-right: 10px;
+  vertical-align: top;
+
+}
+
+.item_2_a {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  vertical-align: bottom;
+  position: relative;
+}
+
+.item_2_b {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  //vertical-align: bottom;
+  position: relative;
+}
+
+.item_2_b p {
+  //padding-top: 0px;
+  padding-right: 10px;
+  padding-left: 10px;
+  //padding-bottom: 0px;
+  font-size: 16px;
+  text-align: justify;
+  //background-color: #F6F1CD;
+  position: absolute;
+  top: 50px;
+}
+
+#review_4 {
+  float: inline-end;
+  background-color: #F6F1CD;
 
 }
