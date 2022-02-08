@@ -1093,13 +1093,19 @@ background-repeat: no-repeat;
   /***********************************************
   レスポンシブサイド（左側）コンテンツ
   ***********************************************/
+  #pages-2 {
+    //display: flex;
+    //flex-direction: row;
+    //width: 599px;
+  }
 
   #sidebar {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    //display: flex;
+    //flex-direction: row;
+    //flex-wrap: wrap;
     //position: relative;
     width: 599px;
+    //height: 100px;
     //padding: 6px 10px 15px 18px;
     //background-position: 31px 0px;
     //margin-left: 0px;
@@ -1107,9 +1113,9 @@ background-repeat: no-repeat;
   }
 
   #sidebar p {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    //display: flex;
+    //flex-direction: row;
+    //flex-wrap: wrap;
     //margin-bottom: 20px;
   }
 
@@ -1122,9 +1128,9 @@ background-repeat: no-repeat;
 
 
   #sidebar li {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    //display: flex;
+    //flex-wrap: wrap;
+    //flex-direction: row;
     width: 599px;
     //margin: 0 10px 24px 0px;
     //list-style: none;
@@ -1318,7 +1324,7 @@ background-repeat: no-repeat;
 
   /* バナー画像２つを横に並べる */
   .banner {
-    width: 599px;
+    width: 400px;
     height: 70px;
     display: flex;
     flex-direction: row;
@@ -1477,35 +1483,45 @@ background-repeat: no-repeat;
   レスポンシブ サイド（右側）コンテンツ
   ***********************************************/
   #wrap_side {
-    width: 599px;
-    padding-right: 10px;
-    display: flex;
-    flex-direction: column;
+    width: 590px;
+    //padding-right: 10px;
+    //display: flex;
+    //flex-direction: row;
+    //flex-wrap: wrap;
+    //height: 100px;
+    clear: both;
+    margin-bottom: 10px;
   }
 
   #sns_bl {
     //margin-left: 20px;
-    width: 599px;
-
+    width: 350px;
+    //margin-top: 40px;
   }
 
   #side_r {
-    height: 70px;
     display: flex;
     flex-direction: row;
-    width: 599px;
+    width: 400px;
+    height: 180px;
+    clear: both;
     /*width: 185px;
-  padding: 6px 9px 15px 18px;
-  background-position: 31px 0px;*/
+    padding: 6px 9px 15px 18px;
+    background-position: 31px 0px;*/
   }
 
   /* sns画像を横に並べる */
-  /*#sns_bl {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 1%;
-  }*/
+  #sns_bl {
+    clear: both;
+    //top: 100px;
+    // margin-top: 40px;
+    //width: 400px;
+    //height: 60px;
+    //display: grid;
+    //gap: 10px;
+    //grid-template-columns: 1fr 1fr 1fr;
+    //margin-top: 1%;
+  }
 
 
 
