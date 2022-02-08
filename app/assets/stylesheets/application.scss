@@ -418,12 +418,9 @@ a#top_column {
 }*/
 
 
-
-
-
-/*************
+/***********************************************
 サイド（左側）コンテンツ
-*************/
+***********************************************/
 #sidebar {
   order: 1;
   /*float: left;*/
@@ -468,7 +465,7 @@ a#top_column {
 }
 
 /***********************************************
-メイン（中央）
+メイン（中央）top
 ***********************************************/
 /*#sns_icon {
   float: right;
@@ -512,9 +509,9 @@ a#top_column {
   color: #616161;
 }
 
-/*************
+/***********************************************
 サイド（右側）コンテンツ
-*************/
+***********************************************/
 /*#wrap_side {
   max-width: 25%;
   max-width: 191px;
@@ -565,7 +562,7 @@ a#top_column {
 }*/
 
 
-/* メインを３つにする */
+/* メインを３つにする 順番変更 */
 #container {
   clear: both;
   display: flex;
@@ -604,6 +601,9 @@ a#top_column {
   margin-top: 1%;
 }
 
+/***********************************************
+メイン（下）news review banner 
+***********************************************/
 /* news,review２つを横に並べる */
 .news_re {
   display: grid;
@@ -620,31 +620,44 @@ a#top_column {
   margin-top: 1%;
 }
 
+/*************
+  review 全体1/2
+ *************/
+
+/* review trial,biginer画像２つを横に並べる */
 .item_review_1 {
   display: flex;
   flex-direction: row;
   width: 316px;
   width: 50%;
+  //top: 300px;
+  position: absolute;
+  top: 90px;
   /*gap: 10px;
   grid-template-columns: 1fr 1fr;
   margin-top: 1%;*/
 
 }
 
+/* review advance,adult画像２つを横に並べる */
 .item_review_2 {
   display: flex;
   flex-direction: row;
   width: 316px;
   width: 50%;
+  position: absolute;
+  top: 163px;
   /*gap: 10px;
   grid-template-columns: 1fr 1fr;
   margin-top: 1%;*/
 
 }
 
+/*************
+  review 全体2/2
+ *************/
 #review {
-
-  width: 320px;
+  width: 316px;
   height: 246px;
   border-radius: 20px;
   border-style: dotted;
@@ -652,19 +665,50 @@ a#top_column {
   background-image: url(review_top.png);
   background-repeat: no-repeat;
   //background-size: 350px;
-  background-size: 100%;
+  background-size: 80%;
+  background-position: top;
   background-color: #F6F1CD;
   float: inline-end;
 }
 
+.item_2_b {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  //vertical-align: bottom;
+  position: relative;
+  //top: 200px;
+}
+
+.item_2_b p {
+  //padding-top: 0px;
+  padding-right: 10px;
+  padding-left: 10px;
+  //padding-bottom: 0px;
+  font-size: 16px;
+  text-align: justify;
+  //background-color: #F6F1CD;
+  position: absolute;
+  top: 20px;
+}
+
+/*#review_4 {
+  //float: inline-end;
+  //background-color: #F6F1CD;
+  position: absolute;
+  //top: 200px;
+}*/
 /*#review a {
 background-image: url(review_tittle.gif);
 background-repeat: no-repeat;
 }*/
 
+/*************
+  news 全体
+ *************/
 #news {
   background-color: #F7F0D4;
-  width: 320px;
+  width: 316px;
   height: 246px;
   border-radius: 20px;
   border-style: dotted;
@@ -681,30 +725,4 @@ background-repeat: no-repeat;
   padding-left: 0px;
   vertical-align: bottom;
   position: relative;
-}
-
-.item_2_b {
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-left: 0px;
-  //vertical-align: bottom;
-  position: relative;
-}
-
-.item_2_b p {
-  //padding-top: 0px;
-  padding-right: 10px;
-  padding-left: 10px;
-  //padding-bottom: 0px;
-  font-size: 16px;
-  text-align: justify;
-  //background-color: #F6F1CD;
-  position: absolute;
-  top: 50px;
-}
-
-#review_4 {
-  float: inline-end;
-  background-color: #F6F1CD;
-
 }
