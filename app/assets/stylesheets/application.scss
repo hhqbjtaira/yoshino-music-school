@@ -9,6 +9,7 @@ body {
   font-family: 14px/1.4 "メイリオ", "Meiryo", arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "MS Pゴシック", "MS PGothic", Sans-Serif;
   color: #616161;
   background: #F7E8BC;
+  width: 100%;
 }
 
 a {
@@ -425,8 +426,9 @@ a#top_column {
   order: 1;
   /*float: left;*/
   width: 185px;
-  padding: 6px 9px 15px 18px;
+  padding: 6px 10px 15px 18px;
   background-position: 31px 0px;
+  margin-left: 0px;
 }
 
 /*#sidebar p {
@@ -473,7 +475,8 @@ a#top_column {
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin-left: 200px;
+  margin-left: 120px;
+  margin-top: 25px;
 }
 
 #content {
@@ -510,6 +513,7 @@ a#top_column {
   max-width: 670px;
   clear: both;
   margin-right: 10px;
+  list-style: none;
 }
 
 #main_class.course_mid {
@@ -860,6 +864,9 @@ background-repeat: no-repeat;
   max-width: 25%;
   max-width: 191px;
 }*/
+#sns_bl {
+  margin-left: 20px;
+}
 
 #side_r {
   display: flex;
@@ -895,12 +902,36 @@ background-repeat: no-repeat;
 
 #f-1 a {
   color: #594600;
+  font-size: 16px;
 }
 
 #f-b {
   background: #3B2D00;
   color: #FFFFFF;
   text-align: center;
+  font-size: 13px;
+  padding-top: 6px;
+  padding-bottom: 4px;
+  //background: url(images/up.png) no-repeat 0 60%;
+  //background-image: url(up.png);
+  //background-repeat: no-repeat;
+  //background-position: right;
+}
+
+#logo {
+  padding-top: 15px;
+}
+
+#logo_2 {
+  width: 150px;
+  padding-top: 10px;
+}
+
+#logo_3 {
+  width: 70px;
+  padding-left: 50px;
+  //padding-right: 0px;
+  padding-top: 30px;
 }
 
 /*div#footer_down {
