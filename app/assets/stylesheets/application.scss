@@ -707,7 +707,6 @@ background-repeat: no-repeat;
   news 全体
  *************/
 #news {
-  background-color: #F7F0D4;
   width: 316px;
   height: 246px;
   border-radius: 20px;
@@ -716,7 +715,12 @@ background-repeat: no-repeat;
   padding-top: 0px;
   padding-right: 10px;
   vertical-align: top;
-
+  background-image: url(news.png);
+  background-repeat: no-repeat;
+  //background-size: 350px;
+  background-size: 90%;
+  background-position: top;
+  background-color: #F7F0D4;
 }
 
 .item_2_a {
@@ -725,4 +729,32 @@ background-repeat: no-repeat;
   padding-left: 0px;
   vertical-align: bottom;
   position: relative;
+}
+
+.item_2_a p {
+  //padding-top: 0px;
+  padding-right: 10px;
+  padding-left: 10px;
+  //padding-bottom: 0px;
+  font-size: 16px;
+  text-align: justify;
+  //background-color: #F6F1CD;
+  position: absolute;
+  top: 20px;
+}
+
+#news_button {
+  position: absolute;
+  top: 90px;
+  left: 7px;
+  width: 290px;
+  height: 150px;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  border-radius: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #72CCF3;
+  background-color: #FFFFFF;
 }
