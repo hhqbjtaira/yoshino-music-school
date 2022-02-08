@@ -67,9 +67,9 @@ h1タグの上下の余白が消えるため、ロゴ画像の高さと揃う
   text-align: center;
 }
 
-/*************
+/*************************
  header
- *************/
+ *************************/
 div#header.top {
   width: 1040px;
   height: 541px;
@@ -103,12 +103,14 @@ div#header.top {
   position: absolute;
   top: 8px;
   left: 750px;
+  padding-right: 10px;
 }
 
 .free_lesson_off {
   position: absolute;
   top: 70px;
   left: 820px;
+  padding-right: 8px;
 }
 
 ul#topnav.clear {
