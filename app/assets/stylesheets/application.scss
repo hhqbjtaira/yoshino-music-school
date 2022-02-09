@@ -945,10 +945,16 @@ background-repeat: no-repeat;
 **********************************************************************************************/
 @media (max-width: 599px) {
 
+  body {
+    //font-family: 14px/1.4 "メイリオ", "Meiryo", arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "MS Pゴシック", "MS PGothic", Sans-Serif;
+    //color: #616161;
+    //background: #F7E8BC;
+    width: 400px;
+  }
 
   /* 画面の最大幅を指定。共通で使用します, 0 4%はスマホ用*/
   .wrapper {
-    width: 590px;
+    width: 400px;
     margin: auto;
     padding: 0 4%;
     text-align: center;
@@ -1192,7 +1198,7 @@ background-repeat: no-repeat;
   メイン（中央）top
   ***********************************************/
   #main {
-    width: 450px;
+    width: 330px;
     //height: 700px;
     //position: relative;
     display: flex;
@@ -1213,15 +1219,15 @@ background-repeat: no-repeat;
     //background-size: 100%;
     //background-position: top;
     //background-color: #FCF0DC;
-    height: 900px;
+    height: 800px;
     //position: relative;
 
   }
 
   .youtube {
-    width: 450px;
-    height: 200px;
-    //top: 70px;
+    width: 200px;
+    height: 100px;
+    top: 30px;
     //left: 40px;
     //position: absolute;
     //clear: both;
@@ -1233,16 +1239,17 @@ background-repeat: no-repeat;
   }*/
 
   /* コースの画像を横に並べる */
-  /*.course {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 1%;
-  }*/
+  .course {
+    top: 380px;
+    //display: grid;
+    //gap: 10px;
+    //grid-template-columns: 1fr 1fr 1fr;
+    //margin-top: 1%;
+  }
 
   #text_main {
     //position: absolute;
-    top: 620px;
+    top: 500px;
     //text-align: justify;
     //padding-left: 20px;
     //padding-right: 20px;
@@ -1259,7 +1266,7 @@ background-repeat: no-repeat;
 
   #column {
     //width: 599px;
-    width: 430px;
+    width: 300px;
     height: 430px;
     //color: #616161;
     //border-radius: 20px;
@@ -1278,18 +1285,19 @@ background-repeat: no-repeat;
   }
 
   .course_top {
-    width: 450px;
-    //height: 300px;
+    width: 330px;
+    height: 500px;
     //padding-top: 10px;
     //text-align: justify;
-    padding-right: 20px;
-    font-size: 13px;
+    //padding-right: 20px;
+    font-size: 12px;
   }
 
   .article a {
+    //width: 330px;
     //top: 200px;
     //color: #FE8738;
-    font-size: 19px;
+    font-size: 16px;
     //list-style: none;
     //padding-top: 100px;
   }
@@ -1300,14 +1308,14 @@ background-repeat: no-repeat;
     //border-radius: 10px;
     //padding: 5px 18px;
     //display: inline-block;
-    font-size: 13px;
+    font-size: 14px;
   }
 
-  /*.post_prop {
-    padding-left: 30px;
-    font-size: 14px;
+  .post_prop {
+    //padding-left: 30px;
+    font-size: 8px;
     //font-weight: bold;
-  }*/
+  }
 
   /***********************************************
   レスポンシブ メイン（下）news review banner 
