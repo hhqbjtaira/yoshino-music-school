@@ -1,19 +1,35 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Myapp</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%
-=begin%>
- <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-<%
-=end%>
-  </head>
-
+<html lang="ja">
+  <!-- headー -->
+  <%= render 'layouts/head' %>
+  <!-- headー -->
   <body>
-    <%= yield %>
+    <div id="wrapper" class="body">    
+      <!-- ヘッダー -->
+      <%= render 'layouts/header' %>
+      <!-- ヘッダー -->        
+      <div id="container">
+        <div id="content" class="top">
+          <!-- main -->
+          <%= yield %>
+          <!-- main -->
+        </div>
+        <!-- / contenttop-->
+
+        <!-- / 右サイド -->
+        <%= render 'layouts/wrap_side_right' %>
+        <!-- / 右サイド -->
+        
+        <!-- / 左サイド -->
+        <%= render 'layouts/sidebar_left' %>
+        <!-- / 左サイド -->
+      </div>
+      <!-- / container -->   
+      <!-- / コンテンツ -->
+      <!-- フッター -->
+      <%= render 'layouts/footer' %>
+    </div>
+    <!-- /wrapper -->     
   </body>
 </html>
+
