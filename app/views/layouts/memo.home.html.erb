@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>にじいろミュージックスクール</title>
+    <meta name="description" content="概要文を120文字程度">
+    <!-- スマホのレスポンシブデザインを実現 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="ページの タイトル" />
+    <!-- OGP:ソーシャルメディアで共有された際に、正しく表示させる仕組み -->
+    <meta property="og:description" content="ページのディスクリプション" />
+    <meta property="og:type" content="ページの種類" />
+    <meta property="og:url" content="ページの URL" />
+    <meta property="og:image" content="サムネイル画像の URL" />
+    <meta property="og:site_name" content="サイト名" />
+    <meta property="og:locale" content="ja_JP"  />
+    <!-- キーワード -->
+    <meta name="keywords" content="キーワード1,キーワード2,キーワード3">
+    <!-- viewpoort設定 -->
+    <meta name="vewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+      <!-- ヘッダー -->
+    <div id="wrapper" class="body">    
+      
+      <div id="header" class="top">
+        <h1 class="site-title">
+          <div class="logo_main">
+            <%= image_tag "logo_main.png"%>
+          </div>
+        </h1>
+        <div class="tel">
+          <%= image_tag "tel.png"%>
+        </div>
+        <div class="free_lesson_off">
+          <%= image_tag "free_lesson_off.png"%>
+        </div>
+            
+        <nav>
+          <ul id="topnav" class="clear">
+            <li class="button"><a href="about2">トップ</a></li>
+            <li class="button"><a href="about2">コースご案内</a></li>
+            <li class="button"><a href="about2">講師紹介</a></li>
+            <li class="button"><a href="about2">体験レッスン</a></li>
+            <li class="button"><a href="about2">入会特典</a></li>
+            <li class="button"><a href="about2">料金一覧</a></li>
+            <li class="button"><a href="about2">アクセス</a></li>
+            <li class="button"><a href="about2">お問合せ</a></li>
+          </ul>
+        </nav>
+      </div>
+    
+          
+        
+      <div id="container">
+        <div id="content" class="top">
+          
+          <div id="main">
+            <!--<div id="sns_icon">
+              <div id="sns_bl">
+                <a class="icon_facebook" href="https://www.facebook.com/"><img alt="~の公式Facebookページ"src="https://nijiiro-ms.com/wp/wp-content/themes/piano/images/ic_fb.svg" width="40"></a>
+                <a class="icon_instagram" href="https://www.instagram.com/"><img alt="の公式Instagramページ"src="https://nijiiro-ms.com/wp/wp-content/themes/piano/images/ic_insta.svg" width="40"></a>
+                <a class="icon_youtube" href="https://www.youtube.com/"><img alt="の公式Youtubeページ"src="https://nijiiro-ms.com/wp/wp-content/themes/piano/images/ic_youtube.svg" width="40"></a>
+              </div>
+            </div>-->           
+              
+            <div id="main_class" class="course_mid"> 
+              <div id="article-1" class="course_bottom">
+                <div id="article-2" class="tittle_top">
+                  <div class="course_contents">
+                    <h2><a id="top_coruse" href="course"></a>
+                      <!--<%= image_tag 'tittle_top_course.png'%>-->   
+                      <!--<a id="top_coruse" href="course"><img alt="tittle_top_course" src="tittle_top_course.png" width="359" height="41"></a> -->
+                    </h2>
+                  </div>
+                  <div id="article-3" class="youtube">
+                    <iframe src="https://www.youtube.com/embed/sXQVEr1SD4g?controls=0" width="587" height="348"></iframe>
+                  </div>
+                  <div id="text_main" class="test_bottom">
+                  <p class="course_text"><strong>沖縄 ピアノ教室</strong>・にじいろミュージックスクールでは、生徒さんの年齢・ご希望に合せて3つのピアノレッスンコースをご用意しております。<a href="course">詳しくはこちら</a>をご覧ください。</p>
+                  <p class="pb_5"><strong>大人の体験レッスン</strong>や<strong>保育士試験、教員採用試験</strong>のアドバイスも行なっております。</p>
+                  <p class="sec_text">0歳から3歳半までのお子さまには、リトミック教室をご案内しております。リトミック教室では、乳幼児・幼児期から音楽を通して「心を豊かにする情操教育、音感教育、リズム感教育」を体験頂くことができます。<br />将来、<strong>ピアノ教室</strong>をお考えの方はぜひご検討ください。</p>
+                  </div>
+                  <div class="course grid">
+                    <div class="item_1">
+                      <a class="course_bn biginer" href="course#anc_bgn"></a>
+                        <%= image_tag "biginner_1.png"%>
+                    </div>
+                    <div class="item_1">  
+                      <a class="course_bn advance" href="course#anc_adv"></a>
+                        <%= image_tag "advance_1.png"%>
+                    </div>
+                    <div class="item_1">  
+                      <a class="course_bn adult" href="course#anc_adt"></a>
+                        <%= image_tag "adult_1.png"%>
+                    </div>
+                    <!--<a class="course_bn biginer" href="course#anc_bgn"><img alt="ピアノ教室のビギナーコース"src="https://nijiiro-ms.com/wp/wp-content/themes/piano/images/biginer.png" width="191" height="496"></a>
+                    <a class="course_bn advance" href="course#anc_adv"><img alt="ピアノ教室のアドバンスコース"src="https://nijiiro-ms.com/wp/wp-content/themes/piano/images/advance.png" width="198" height="488"></a>
+                    <a class="course_bn adult" href="course#anc_adt"><img alt="大人のピアノ教室"src="https://nijiiro-ms.com/wp/wp-content/themes/piano/images/adult.png" width="197" height="468"></a>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--<div id="column" class="course_mid container top_arc">-->
+            <div id="column" class="course_mid">
+              <div class="course_bottom">
+                <div class="course_top">
+                  <div>
+                    <h2>
+                      <a id="top_column" href="https://nijiiro-ms.com/column"></a>
+                        <!--<%= image_tag "colum_top.png"%>-->
+                      <!--a id="top_column" href="https://nijiiro-ms.com/column"><img class="column_title" alt="ピアノ教室お役立ちコラム" src="/wp/wp-content/themes/piano/images/tittle_top_column.png" width="610" height="43"></a>-->
+                    </h2>
+                    <div class="course_top">
+                      <ul>
+                        <li class="article">
+                          <h4><a href="https://nijiiro-ms.com/column/2501.html" title="大人のピアノクラス 受講生募集中♫">大人のピアノクラス 受講生募集中♫</a>
+                          </h4>
+                          <div class="post_prop">
+                            <span id="date">2021.11.05</span>
+                          </div>
+                          <p class="disc">
+                            大人のピアノクラスへ通う方を募集しております。 基礎から丁寧に学ぶことができます。 全くの初めてです・・・と&nbsp...
+                          </p>
+                          <div class="read_more">
+                            <a href="https://nijiiro-ms.com/column/2501.html" title="大人のピアノクラス 受講生募集中♫">このコラムを読む</a>
+                          </div>                         
+                        </li>
+                          <%= image_tag "middle_line_or.png"%>
+                        <li class="article">
+                          <h4><a href="https://nijiiro-ms.com/column/2499.html" title="ピアノクラスへのご案内">ピアノクラスへのご案内</a></h4>
+                          <div class="post_prop">
+                            <span id="date">2021.11.03</span>
+                          </div>
+                          <p class="disc">
+                            ピアノクラスへは３歳半ごろから体験レッスンを受け付けております。 ３歳半ごろから始められるお子様にはプレピア&nbsp...
+                          </p>
+                          <div class="read_more">
+                            <a href="https://nijiiro-ms.com/column/2499.html" title="ピアノクラスへのご案内">このコラムを読む</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="news_re grid">
+              <div id="news" class=item_2_a>
+                <h3><a href="information"></a></h3>
+                  <!--<%= image_tag "news.png"%>-->   
+                <!--<h3><a href="information"><img alt="ピアノ教室からのお知らせ" src="https://nijiiro-ms.com/wp/wp-content/themes/piano/images/news_tittle.gif" width="308" height="44"></a></h3>-->
+                <p>ピアノ教室のイベントやお休みに関するお知らせは、こちらをご確認ください。</p>
+                <div id="news_button">
+                  <ul class="news_update">
+                    <li><a href="https://nijiiro-ms.com/info/%e3%80%90%e6%9c%ac%e6%97%a57-21%e4%bc%91%e8%ac%9b%e3%80%91">【本日7/21休講】...<span class="info_date">(07/21)</span></a></li>
+                    <li><a href="https://nijiiro-ms.com/info/%e3%80%90%e6%9c%ac%e6%97%a57-20%e4%bc%91%e8%ac%9b%e3%80%91">【本日7/20休講】...<span class="info_date">(07/20)</span></a></li>
+                    <li><a href="https://nijiiro-ms.com/info/%e3%80%90%e7%b7%8a%e6%80%a5%e4%ba%8b%e6%85%8b%e5%ae%a3%e8%a8%80%e4%b8%ad%e3%81%ae%e3%83%ac%e3%83%83%e3%82%b9%e3%83%b3%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6%e3%80%911-222-7">【緊急事態宣言中のレッスンに...<span class="info_date">(01/22)</span></a></li>
+                    <li><a href="https://nijiiro-ms.com/info/2021%e5%b9%b41%e6%9c%88%e4%bb%a5%e9%99%8d%e3%81%ab%e5%9c%9f%e6%9b%9c%e6%97%a5%e5%8d%88%e5%be%8c%e7%a9%ba%e3%81%8d%e3%81%8c%e5%87%ba%e3%81%be%e3%81%97%e3%81%9f%ef%bc%81">2021年1月以降に土曜日午...<span class="info_date">(12/14)</span></a></li>
+                    <li><a href="https://nijiiro-ms.com/info/%e3%80%90%e6%98%8e%e6%97%a5%ef%bc%88%ef%bc%99%e6%9c%88%ef%bc%95%e6%97%a5%ef%bc%89%e3%81%ae%e3%83%ac%e3%83%83%e3%82%b9%e3%83%b3%e4%bc%91%e8%ac%9b%e3%80%91">【明日（９月５日）のレッスン...<span class="info_date">(09/04)</span></a></li>
+                  </ul>
+                </div>
+              </div>           
+
+              <div id="review" class=item_2_b>
+                <h3><a href="review"></a></h3>
+                  <!--<%= image_tag "review_top.png"%>-->   
+                <!--<h3><a href="review"><img alt="ピアノ教室の受講者のご感想" src="https://nijiiro-ms.com/wp/wp-content/themes/piano/images/review_tittle.gif" width="308" height="44"></a></h3>-->
+                <p>ピアノ教室の各コースを受講されたみなさまから、ご感想を頂きました。</p>
+                <div id="review_4 grid">
+                  <div id="review_top" class=item_review_1>
+                    <a class="rev_btn ex" href="https://nijiiro-ms.com/property/free_trial"></a>
+                      <%= image_tag "trial_rev.png"%>
+                    <a class="rev_btn bg" href="https://nijiiro-ms.com/lesson/piano_bg"></a>
+                      <%= image_tag "big_rev.png"%>
+                  </div>    
+                  <div id="review_bottom" class=item_review_2>
+                    <a class="rev_btn adv" href="https://nijiiro-ms.com/lesson/piano_adv"></a>
+                      <%= image_tag "adv_rev.png"%>
+                    <a class="rev_btn adt" href="https://nijiiro-ms.com/rev_const"></a>
+                      <%= image_tag "adu_rev.png"%>
+                    <!--<a class="rev_btn ex" href="https://nijiiro-ms.com/property/free_trial"><img alt="体験レッスンのご感想" src="https://nijiiro-ms.com/wp/wp-content/themes/piano/images/rev_ex.png" width="139" height="128"></a>
+                    <a class="rev_btn bg" href="https://nijiiro-ms.com/lesson/piano_bg"><img alt="ビギナーコースのご感想"src="https://nijiiro-ms.com/wp/wp-content/themes/piano/images/rev_bg.png" width="139" height="128"></a>
+                    <a class="rev_btn adv" href="https://nijiiro-ms.com/lesson/piano_adv"><img alt="アドバンスコースのご感想"src="https://nijiiro-ms.com/wp/wp-content/themes/piano/images/rev_adv.png" width="139" height="128"></a>
+                    <a class="rev_btn adt" href="https://nijiiro-ms.com/rev_const"><img alt="大人のピアノ教室のご感想"src="https://nijiiro-ms.com/wp/wp-content/themes/piano/images/rev_adt.png" width="139" height="128"></a>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="banner grid">
+              <div id="mashiki_bn" class="banner_1">
+                <a class="rev_btn ex" href="https://nijiiro-ms.com/info/%E7%9C%9F%E5%BF%97%E5%96%9C%E6%95%99%E5%AE%A4%E5%86%85%E8%A6%B3"></a>
+                  <%= image_tag "mashiki_bn.png"%>
+                <!--<a class="rev_btn ex" href="https://nijiiro-ms.com/info/%E7%9C%9F%E5%BF%97%E5%96%9C%E6%95%99%E5%AE%A4%E5%86%85%E8%A6%B3"><img alt="真志喜教室のご案内" src="https://nijiiro-ms.com/wp/wp-content/themes/piano/images/mashiki_bn.png"></a>-->   
+              </div>
+              <div id="violin_bn" class="banner_1">
+                <a class="rev_btn ex" href="https://nijiiro-ms.com/course_violin"></a>
+                  <%= image_tag "violin_bn.png"%>
+                <!--<a class="rev_btn ex" href="https://nijiiro-ms.com/course_violin"><img alt="バイオリンコースのご案内" src="https://nijiiro-ms.com/wp/wp-content/themes/piano/images/violin_bn.png"></a>-->   
+              </div>
+            </div>
+          </div><!-- mainー -->          
+        </div>
+        <!-- / contenttop-->
+
+        <!-- / 右サイド -->
+        <div id="wrap_side">
+          <div id="sns_icon-lg">
+            <div id="sns_bl grid">
+              <div id="sns_fa" class="item_4">
+                <a class="ic_fb" href="https://www.facebook.com/nijiiro.music.school.okinawa"></a>
+                  <!--<%= image_tag "youtube.png"%>-->
+              </div>
+              <div id="sns_ins" class="item_4">
+                <a class="ic_insta" href="https://www.instagram.com/njiiromusicschool_okinawa/?hl=ja"></a>
+                  <!--<%= image_tag "instagram.png"%>-->
+              </div>
+              <div id="sns_fb" class="item_4">
+                <a class="ic_youtube" href="https://www.youtube.com/channel/UCyxuVIp6NrbP1N6jgZeGcmg"></a>
+                  <!--<%= image_tag "facebook.png"%>-->
+              </div>
+              <a class="ic_fb" href="https://www.facebook.com/nijiiro.music.school.okinawa"><img alt="ピアノ教室・にじいろミュージックスクールの公式Youtubeページ"src="https://nijiiro-ms.com/wp/wp-content/themes/piano/images/ic_fb.svg" width="40"></a>
+              <a class="ic_insta" href="https://www.instagram.com/njiiromusicschool_okinawa/?hl=ja"><img alt="ピアノ教室・にじいろミュージックスクールの公式Youtubeページ"src="https://nijiiro-ms.com/wp/wp-content/themes/piano/images/ic_insta.svg" width="40"></a>
+              <a class="ic_youtube" href="https://www.youtube.com/channel/UCyxuVIp6NrbP1N6jgZeGcmg"><img alt="ピアノ教室・にじいろミュージックスクールの公式Youtubeページ"src="https://nijiiro-ms.com/wp/wp-content/themes/piano/images/ic_youtube.svg" width="40"></a>
+            </div>    
+          </div>
+          <div id="side_r">
+              <a id="bn_blog" href="https://nijiiro-ms.seesaa.net/"></a>
+                <%= image_tag "blog.png"%>
+              <a id="bn_rhythm" href="https://rhythm.nijiiro-ms.com"></a>
+                <%= image_tag "litomic.png"%>
+              <a id="bn_flute" href="https://flute.nijiiro-ms.com"></a>
+                <%= image_tag "flute.png"%>  
+              <!--<a id="bn_blog" href="https://nijiiro-ms.seesaa.net/"><img alt="ピアノ教室のスタッフブログ"src="https://nijiiro-ms.com/wp/wp-content/themes/piano/images/blog-bn.png" width="172" height="400"></a>
+              <a id="bn_rhythm" href="https://rhythm.nijiiro-ms.com"><img alt="沖縄 リトミック教室はこちら"src="https://nijiiro-ms.com/wp/wp-content/themes/piano/images/rhythm-bn.png" width="183" height="414"></a>
+              <a id="bn_flute" href="https://flute.nijiiro-ms.com"><img alt="沖縄 フルート教室はこちら"src="https://nijiiro-ms.com/wp/wp-content/themes/piano/images/flute_bn.png" width="172" height="400"></a>-->
+          </div>
+        </div>
+          <!-- / 右サイド -->
+
+        <!-- 左 カラム -->
+        <div id="sidebar">
+          <div id="pages-2" class="widget widget_pages">
+            <h3>ピアノ教室MENU</h3>
+            <!--<div id="sidebar" class="left-1">-->
+            <ul>
+              <li class="page_item page-item-22"><a href="https://nijiiro-ms.com/contact">お問い合せ</a></li>
+              <li class="page_item page-item-812"><a href="https://nijiiro-ms.com/calender">教室カレンダー</a></li>
+              <li class="page_item page-item-8"><a href="https://nijiiro-ms.com/course">ピアノコース</a></li>
+              <li class="page_item page-item-14"><a href="https://nijiiro-ms.com/trial">ピアノ体験レッスン</a></li>
+              <li class="page_item page-item-532"><a href="https://nijiiro-ms.com/review">レッスンのご感想</a></li>
+              <li class="page_item page-item-1756"><a href="https://nijiiro-ms.com/course_violin">バイオリンコース</a></li>
+              <li class="page_item page-item-36"><a href="https://nijiiro-ms.com/message">ピアノ教室の想い</a></li>
+              <li class="page_item page-item-12"><a href="https://nijiiro-ms.com/lecturer">講師紹介</a></li>
+              <li class="page_item page-item-44"><a href="https://nijiiro-ms.com/faq">よくあるお問い合せ</a></li>
+              <li class="page_item page-item-16"><a href="https://nijiiro-ms.com/privilege">入会特典</a></li>
+              <li class="page_item page-item-18"><a href="https://nijiiro-ms.com/fee">レッスン料金一覧</a></li>
+              <li class="page_item page-item-60"><a href="https://nijiiro-ms.com/facilities">教室の様子</a></li>
+              <li class="page_item page-item-20"><a href="https://nijiiro-ms.com/access">アクセス</a></li>
+              <li class="page_item page-item-35"><a href="https://nijiiro-ms.com/privacy">プライバシーポリシー</a></li>
+              <li class="page_item page-item-38"><a href="https://nijiiro-ms.com/area">サービスエリア</a></li>
+              <li class="page_item page-item-169"><a href="https://nijiiro-ms.com/link">リンク</a></li>
+            </ul>
+          </div>        
+        </div>
+        <!-- /  左 カラム  -->    
+      </div>
+      <!-- / container -->   
+
+      <!-- / コンテンツ -->
+      <!-- フッター -->
+      <div id="f-a">
+        <div id="f-1">
+          <div class="inner">
+            <div id="logo">
+                <!-- ロゴ -->
+                <a href="https://nijiiro-ms.com"></a>
+                  <%= image_tag "logo_footer.png"%>  
+                <!--a href="https://nijiiro-ms.com"><img src="https://nijiiro-ms.com/wp/wp-content/themes/piano/images/logo_footer.png" width="146" height="101" alt="沖縄 ピアノ教室｜にじいろミュージックスクール" /></a>-->
+                <!-- / ロゴ -->
+            </div>
+            <div class="button">
+              <ul>
+                <li><a href="https://nijiiro-ms.com">トップページ</a></li>
+                <li><a href="https://nijiiro-ms.com/calender">教室カレンダー</a></li>
+                <li><a href="https://nijiiro-ms.com/message">音楽教室の想い</a></li>
+                <li><a href="https://nijiiro-ms.com/lecturer">講師紹介</a></li>
+              </ul>
+            </div>
+            <div class="button">
+              <ul>
+                <li><a href="https://nijiiro-ms.com/review">レッスンのご感想</a></li>
+                <li><a href="https://nijiiro-ms.com/faq">よくあるお問い合せ</a></li>
+                <li><a href="https://nijiiro-ms.com/fee">レッスン料金一覧</a></li>
+                <li><a href="https://nijiiro-ms.com/privilege">入会特典</a></li>
+              </ul>
+            </div>
+            <div class="button">
+              <ul>
+                <li><a href="https://nijiiro-ms.com/course">ピアノコース</a></li>
+                <li><a href="https://nijiiro-ms.com/course_violin">バイオリンコース</a></li>
+                <li><a href="https://nijiiro-ms.com/facilities">教室の様子・設備</a></li>
+                <li><a href="https://nijiiro-ms.com/access">アクセス</a></li>
+              </ul>
+            </div>
+            <div class="button last">
+              <ul>
+                <li><a href="https://nijiiro-ms.com/contact">お問い合せはこちら</a></li>
+                <li><a href="https://nijiiro-ms.com/privacy">プライバシーポリシー</a></li>
+                <li><a href="https://nijiiro-ms.com/link">リンク</a></li>
+              </ul>
+            </div>
+            <div id="logo_2">
+                <!-- ロゴ -->
+                <a href="https://nijiiro-ms.com"></a>
+                  <%= image_tag "yadokari.png"%>  
+                <!--a href="https://nijiiro-ms.com"><img src="https://nijiiro-ms.com/wp/wp-content/themes/piano/images/logo_footer.png" width="146" height="101" alt="沖縄 ピアノ教室｜にじいろミュージックスクール" /></a>-->
+                <!-- / ロゴ -->
+            </div>
+            <div id="logo_3">
+                <!-- ロゴ -->
+                <a href="https://nijiiro-ms.com"></a>
+                  <%= image_tag "up.png"%>  
+                <!--a href="https://nijiiro-ms.com"><img src="https://nijiiro-ms.com/wp/wp-content/themes/piano/images/logo_footer.png" width="146" height="101" alt="沖縄 ピアノ教室｜にじいろミュージックスクール" /></a>-->
+                <!-- / ロゴ -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- フッター -->
+      <div id="f-b">
+      <address class="down-bar">Copyright(c) 2012 沖縄 ピアノ教室｜にじいろミュージックスクール All Rights Reserved.</address>
+      </div>
+    </div>
+    <!-- /wrapper -->     
+  </body>
+</html>
